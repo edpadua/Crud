@@ -18,7 +18,7 @@ function App() {
     <> 
      <div className="displayUsers">
      {userList.map((user) => {
-          return <h1 key={user.id}> {user.name}</h1>
+          return <h2 key={user.id}> {user.name}</h2>
      })}
      </div>
        
