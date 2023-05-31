@@ -14,20 +14,22 @@ function AdicionarUsuarios() {
 
     const [name, setName] = useState("");
     const [username, setUsername] = useState("");
-    const [newUsername, setNewUsername] = useState("");
+   
 
     return (
-        <div className="addUser">
+        <div className={styles.adicionarUsuario}>
             <input
+                className='form_control'
                 type="text"
-                placeholder="Digite o nome..."
+                placeholder="Digite o nome ..."
                 onChange={(event) => {
                     setName(event.target.value);
                 }}
             />
             <input
+                className='form_control'
                 type="text"
-                placeholder="Digite o nome do usuário..."
+                placeholder="Digite o nome do usuário ..."
                 onChange={(event) => {
                     setUsername(event.target.value);
                 }}

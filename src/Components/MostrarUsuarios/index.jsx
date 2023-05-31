@@ -6,6 +6,7 @@ import styles from "./MostrarUsuarios.module.css"
 
 import { useSelector, useDispatch } from "react-redux";
 import { addUser, deleteUser, updateUsername } from "../../reducers/Users.js";
+import Usuario from '../Usuario';
 
 function MostrarUsuarios() {
 
@@ -17,37 +18,10 @@ function MostrarUsuarios() {
     const [newUsername, setNewUsername] = useState("");
 
     return (
-        <div className="displayUsers">
+        <div className={styles.mostrarUsuarios}>
             {userList.map((user) => {
                 return (
-                    <div>
-                        <h2> {user.name}</h2>
-                        <h2> {user.username}</h2>
-                        <input
-                            type="text"
-                            placeholder="Digite um novo nome de usuário..."
-                            onChange={(event) => {
-                                setNewUsername(event.target.value);
-                            }}
-                        />
-                        <button
-                            onClick={() => {
-                                dispatch(
-                                    updateUsername({ id: user.id, username: newUsername })
-                                );
-                            }}
-                        >
-                            {" "}
-                            Atualizar nome de usuário
-                        </button>
-                        <button
-                            onClick={() => {
-                                dispatch(deleteUser({ id: user.id }));
-                            }}
-                        >
-                            Remover usuário
-                        </button>
-                    </div>
+                    <Usuario usuario={user}/>
                 );
             })}
         </div>
