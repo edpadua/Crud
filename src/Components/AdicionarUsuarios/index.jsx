@@ -34,7 +34,7 @@ function AdicionarUsuarios() {
                     setUsername(event.target.value);
                 }}
             />
-            <button
+            <button className={styles.button_addUser}
                 onClick={() => {
                     dispatch(
                         addUser({

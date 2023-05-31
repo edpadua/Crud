@@ -1,4 +1,35 @@
 .usuario{
     padding-bottom: 30px;
-    background-color: aliceblue;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+    background-color: var(--cinza-claro);
+    border-radius: 8px;
+}
+
+
+.usuario_info{
+    padding-bottom: 20px;
+}
+
+.button_update{
+    color: var(--branco);
+    background-color: var(--azul-principal);
+    margin-right: 20px;
+}
+
+.button_update:hover{
+    background-color: var(--azul-principal-hover);
+}
+
+
+.button_delete{
+    color: #ffffff;
+    background-color: var(--vermelho-principal);
+}
+
+
+.button_delete:hover{
+    background-color: var(--vermelho-principal-hover);
 }

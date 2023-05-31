@@ -4,11 +4,21 @@
    padding-right: 20%;
    padding-left: 20%;
    padding-bottom: 40px;
+   padding-top: 150px;
 }
 
 
-.inputUsuario{
 
+
+.button_addUser{
+    color: var(--branco);
+    background-color: var(--azul-principal);
+    margin-right: 20px;
+}
+
+
+.button_addUser:hover{
+    background-color: var(--azul-principal-hover);
 }
 
 

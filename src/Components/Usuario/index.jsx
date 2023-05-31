@@ -12,10 +12,16 @@ function Usuario({ usuario }) {
 
     const [newUsername, setNewUsername] = useState("");
 
+    const dispatch = useDispatch();
+    const userList = useSelector((state) => state.users.value);
+
     return (
         <div className={styles.usuario}>
-            <h2>Nome: {usuario.name}</h2>
-            <h2>Usuário: {usuario.username}</h2>
+            <div className={styles.usuario_info} >
+                <h2>Nome: {usuario.name}</h2>
+                <h2>Usuário: {usuario.username}</h2>
+            </div>
+
             <input
                 className='form_control'
                 type="text"
@@ -24,7 +30,7 @@ function Usuario({ usuario }) {
                     setNewUsername(event.target.value);
                 }}
             />
-            <button
+            <button className={styles.button_update}
                 onClick={() => {
                     dispatch(
                         updateUsername({ id: usuario.id, username: newUsername })
@@ -34,7 +40,7 @@ function Usuario({ usuario }) {
                 {" "}
                 Atualizar nome de usuário
             </button>
-            <button
+            <button className={styles.button_delete}
                 onClick={() => {
                     dispatch(deleteUser({ id: usuario.id }));
                 }}

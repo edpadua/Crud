@@ -1,0 +1,6 @@
+.rodape{
+    display: block;
+    width: 100%;
+    background-color: var(--preto);
+    height: 300px;
+}

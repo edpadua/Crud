@@ -1,42 +1,42 @@
 export const UsersData = [
     {
       id: 1,
-      name: "Leanne Graham",
-      username: "Bret",
+      name: "José",
+      username: "jose",
     },
     {
       id: 2,
-      name: "Ervin Howell",
-      username: "Antonette",
+      name: "Maria",
+      username: "maria",
     },
     {
       id: 3,
-      name: "Clementine Bauch",
-      username: "clementine",
+      name: "João Antõnio",
+      username: "jantonio",
     },
     {
       id: 4,
-      name: "Patricia Lebsack",
-      username: "Karianne",
+      name: "Carlos Henrique",
+      username: "henrique",
     },
     {
       id: 5,
-      name: "Chelsey Dietrich",
-      username: "Kamren",
+      name: "Chesterton",
+      username: "chest",
     },
     {
       id: 6,
-      name: "Jake Runolfsdottir V",
-      username: "Leopoldo_Corkery",
+      name: "J.R.R. Tolkien",
+      username: "galdalf",
     },
     {
       id: 7,
-      name: "Mrs. Dennis Schulist",
-      username: "Karley_Dach",
+      name: "Sonny",
+      username: "sany",
     },
     {
       id: 8,
-      name: "Kurtis Weissnat",
-      username: "Elwyn.Skiles",
+      name: "Bruno Gabriel",
+      username: "brgabriel",
     },
   ];
